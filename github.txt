@@ -1,0 +1,41 @@
+추후 마크다운 파일로 변경
+
+    - **버전 관리:** 프로젝트 상태가 변경되는 정보를 알고 있다는 것입니다. Git 은 가장 널리 쓰이는 버전관리 도구 중에 하나로 commit 을 사용해서 버전이 달라지는 것을 관리합니다.
+    - **git 초기화(git initialize) :** 컴퓨터에 있는 프로젝트를 Git 이 관리하는 프로젝트로 만들 수 있습니다. 앞으로 Git 으로 관리할꺼야! 하고 설정해주면 됩니다. 이 작업을 한다고 표현합니다.
+    - **commit  :** 현재 프로젝트의 상태를 찰칵 📸  저장하는 것을 이라고 합니다.
+        - 누가(author), 언제 commit 했는지의 정보와 프로젝트 변경 내용
+        - 작업내역이 어떤 것인지 알아볼 수 있게 적는 메시지를 'commit 메시지'라고 합니다.
+            - **[코드스니펫] commit 내용 페이지 링크**
+                
+                [https://github.com/ohahohah/constitution-of-republic-of-korea/commit/4fece742d1e851840c600ff316adfa335f986841](https://github.com/ohahohah/constitution-of-republic-of-korea/commit/4fece742d1e851840c600ff316adfa335f986841)
+                
+        
+        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/13bd3344-d524-4d1b-91d0-083c879b9383/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/13bd3344-d524-4d1b-91d0-083c879b9383/Untitled.png)
+        
+    - **add (혹은 staging, 스테이징) :** commit 에 반영할지 안할지는 파일 단위로 선택할 수 있습니다. commit 에 반영할 파일을 선택하는 것
+        
+        
+        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c04c61f9-3930-4d6d-b2a1-4f5b957c70f9/sourcstree_commit5_stage.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c04c61f9-3930-4d6d-b2a1-4f5b957c70f9/sourcstree_commit5_stage.png)
+        
+        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d2f426f-bb28-4eb9-add9-bd2f4e323a2c/Sourcetree_5th_commit2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d2f426f-bb28-4eb9-add9-bd2f4e323a2c/Sourcetree_5th_commit2.png)
+        
+    - commit history : commit 한 순서대로 리스트. 역사!
+        
+        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6811e22b-8abb-4831-8be8-512a704d5f73/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6811e22b-8abb-4831-8be8-512a704d5f73/Untitled.png)
+        
+    - 지금까지 우리가 한 작업은 'git 초기화하기(initialize) - add(staging) - commit' 입니다.
+        - git 초기화는 처음에 단 한번만 해 주면 됩니다. 작업 내역을 저장하기 위해서는 **add - commit** 만 하면 됩니다.
+    - **repo :** 'Git으로 관리되는 프로젝트' 를 Git 에서는 **repo(리포**, repository 리포지토리의 약자) 라고 부릅니다. 내 컴퓨터에 저장되어있는 리포지토리를 **로컬 repo**(local repository) 라고 합니다. Github 처럼 다른 곳에서 접속할 수 있는 공간에 저장되어있는 것을 **원격 repo**(remote repository) 라고 합니다.
+    - Tracking(추적) : 로컬 repo 와 원격 repo 를 연결한다!
+        
+        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a70e3a68-f47a-402e-b987-6681163747c8/1week.001.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a70e3a68-f47a-402e-b987-6681163747c8/1week.001.jpeg)
+        
+    - push : 로컬 repo 의 commit 들을 원격 repo 에 반영하기(push)! 밀어넣기. 원격 repo 에 없는 즉,새로운 commit 내역을 모두 원격 repo 에 한 번에 반영합니다.
+    - pull : 원격 repo 의 commit 들을 로컬 repo 로 반영하기(pull)! 땡겨오기. 로컬 repo 에 없는 즉,새로운 commit 내역을 모두 로컬 repo 에 한 번에 반영합니다.
+        
+        
+        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/59e20dfa-09e8-44d1-8512-5ff9be1ee562/1week.005.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/59e20dfa-09e8-44d1-8512-5ff9be1ee562/1week.005.jpeg)
+        
+        - clone : 원격 repo 를 내 컴퓨터에 가져와서 초기 repo 세팅하는 것을 clone(복제하기)!
+        
+        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c3528122-4187-4b0d-b568-e8141e4b855b/1week.006.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c3528122-4187-4b0d-b568-e8141e4b855b/1week.006.jpeg)
